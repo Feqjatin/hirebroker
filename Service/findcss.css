@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .job-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .job-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    margin-top: 0;
+  }
+  
+  .job-card p {
+    margin: 5px 0;
+    color: #555;
+  }

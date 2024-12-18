@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="findjobs.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1 class="logo">HireBooker</h1>
+    <button class="tempbtn">+</button>
+    <div class="menus">
+      <a href="index.html" onclick="homefunc()"><ion-icon name="home-outline"></ion-icon> Home</a>
+      <a href="../Practice/index.html"><ion-icon name="newspaper-outline"></ion-icon> Practice</a>
+      <a href="./performance.html"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+      
+    </div>
+
+    <div class="profile">
+       
+      <div class="profile-name">
+      <span id="showname"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="main-header">
+      <ion-icon class="menu-bar hamburger" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" placeholder="Search Your Best Job Here...">
+        <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <div class="filter-wrapper">
+      <p>Recommedation</p>
+      <div class="filter">
+        <button class="btn-filter">Data Science</button>
+        <button class="btn-filter">Full Stack Developer</button>
+        <button class="btn-filter">Frontend Developer</button>
+        <button class="btn-filter">System Design</button>
+        <button class="btn-filter">Backend Developer</button>
+        <button class="btn-filter">Show All</button>
+      </div>
+    </div>
+
+    <div class="sort">
+      <p>Sort</p>
+      <div class="sort-list">
+        <select>
+          <option value="0">All</option>
+          <option value="1">Lowest</option>
+          <option value="2">Highest</option>
+        </select>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="job-container" class="job-container"></div> 
+ 
+    </div>
+  </div>
+
+
+  
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="findjobs.js"></script>
+
+</html>
